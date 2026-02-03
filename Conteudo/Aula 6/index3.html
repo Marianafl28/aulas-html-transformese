@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image</title>
+    <style>
+        body{
+            background-image: url(rock.gif);  
+            color:rgb(0, 0, 0);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }
+
+        p{
+            -webkit-text-stroke: 0.4px rgba(51, 5, 255, 0.574);
+        }
+         h1{
+            -webkit-text-stroke: 0.20px rgb(251, 255, 3);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplos de imagens de fundo</h1>
+    <p>Exemplos de imagens de fundo.</p>
+
+    <!-- <p style="background-image: url(rock.gif);">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Quaerat rerum eum vitae corporis reiciendis repudiandae totam deleniti<br> sunt maxime repellendus cum voluptatum cupiditate repellat nisi, <br> voluptate error eaque fuga autem?</p> -->
+
+    <picture>
+        <source media="(min-width: 650px)" srcset="labrador.png">
+         <source media="(min-width: 465px)" srcset="workplace.jpg">
+        <img src="labrador.png">
+    </picture>
+</body>
+</html>
